@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@callstack/react-theme-provider": "^3.0.6",
+    "@emotion/react": "^11.4.1",
+    "@react-theming/storybook-addon": "^1.1.1",
     "atomize": "^1.0.28",
     "next": "11.1.0",
     "react": "17.0.2",

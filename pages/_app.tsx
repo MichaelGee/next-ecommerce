@@ -1,13 +1,17 @@
 // import '../styles/globals.css'
-import { StyleReset } from 'atomize';
+import { StyleReset, ThemeProvider } from 'atomize';
 import { Provider as StyletronProvider } from 'styletron-react'
 import { styletron } from '../styletron'
+import  mainTheme  from 'theme'
+
 
 function MyApp({ Component, pageProps }) {
   return (
     <StyletronProvider value={styletron}>
-      <StyleReset />
-    <Component {...pageProps} />
+      <ThemeProvider theme={mainTheme}>
+        <StyleReset />
+        <Component {...pageProps} />
+      </ThemeProvider>
     </StyletronProvider>
   )
 }

@@ -8,4 +8,4 @@ import { storiesOf } from '@storybook/react';
 
 const stories = storiesOf('Button', module);
 
-stories.add('button', () => <PrimaryButton />);
+stories.add('button', () => <PrimaryButton text='login' />);
