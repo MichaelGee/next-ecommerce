@@ -1,4 +1,4 @@
-// import '../styles/globals.css'
+import '../styles/globals.css'
 import { StyleReset, ThemeProvider } from 'atomize';
 import { Provider as StyletronProvider } from 'styletron-react'
 import { styletron } from '../styletron'

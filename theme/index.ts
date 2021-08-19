@@ -34,7 +34,8 @@ const mainTheme = {
  },
 
  fontFamily : {
-    ...DefaultTheme.fontFamily,
+   //  ...DefaultTheme.fontFamily,
+    main: 'Playfair Display, serif',
  },
 
 //FONT SIZE
@@ -53,26 +54,46 @@ const mainTheme = {
 
      size:{
      ...DefaultTheme.textSize.size,
-     tiny: "0.625rem",
-     caption: "0.75rem",
-     body: "0.875rem",
-     paragraph: "0.875rem",
-     subheader: "1.063rem",
-     title: "1.375rem",
-     heading: "1.625rem",
-     large: "2rem",
-     larger: "2.5rem",
-     largest: "3rem",
      },
      height:{
         ...DefaultTheme.textSize.height,
      }
     
- }
+ },
 // SPACING
 // MEDIA QUERIES
 // BORDER RADIUS
+ rounded:{
+   ...DefaultTheme.textSize.rounded,
+    1: '2px',
+    2: '4px',
+    3: '6px',
+    4: '8px',
+    5: '10px',
+    6: '12px',
+    7: '14px',
+    8: '16px',
+    9: '18px',
+    10: '20px',
+    11: '22px',
+    12: '24px',
+    13: '26px',
+    14: '28px',
+    15: '30px',
+    16: '32px',
+    17: '34px',
+    18: '36px',
+    19: '38px',
+    20: '40px',
+    21: '42px',
+    22: '44px',
+    23: '46px',
+    24: '48px',
+    25: '50px',
+ }
 }
 
+
+console.log(mainTheme);
 
 export default mainTheme;
