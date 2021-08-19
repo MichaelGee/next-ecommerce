@@ -1,6 +1,6 @@
 import { PrimaryButton } from 'components/atoms/Button';
 import { FC } from 'react';
-import { Div, Text, Icon } from 'react-atomize';
+import { Div, Text} from 'react-atomize';
 import { Box } from 'rebass';
 
 export const Navbar: FC = () => {
