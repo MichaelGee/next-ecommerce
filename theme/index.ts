@@ -93,7 +93,4 @@ const mainTheme = {
  }
 }
 
-
-console.log(mainTheme);
-
 export default mainTheme;

@@ -1,7 +1,5 @@
-import { LoginForm } from 'components/organisms/LoginForm'
-import { ModalComponent } from 'components/organisms/Modal'
 import Head from 'next/head'
-import { FC, useState } from 'react'
+import { FC } from 'react'
 
 
 const Home: FC = () => {
