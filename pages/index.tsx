@@ -1,3 +1,4 @@
+import { Searchbar } from 'components/molecules/Searchbar'
 import Head from 'next/head'
 import { FC } from 'react'
 
@@ -10,6 +11,7 @@ const Home: FC = () => {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Searchbar/>
     </>
 
   )
