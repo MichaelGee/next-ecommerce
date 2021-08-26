@@ -1,6 +1,6 @@
 import { PrimaryButton } from 'components/atoms/Button'
 import { InputComponent } from 'components/atoms/Input'
-import { Div, Icon, Text } from 'react-atomize'
+import { Div, Icon, Text } from 'atomize'
 import { ModalComponent } from './Modal'
 
 interface ISignupForm {

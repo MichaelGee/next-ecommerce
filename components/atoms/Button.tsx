@@ -1,10 +1,10 @@
-import { Button, Icon } from "atomize";
+import { Button } from "atomize";
 
 
 interface IButtonProps {
   text: string;
-  fontSize: string;
-  padding: string;
+  textSize: string | object;
+  padding: string | object;
   bg: string;
   shadow: string;
   rounded: string;
@@ -15,13 +15,12 @@ interface IButtonProps {
   prefix: Element;
   width: string;
   m: object;
+  textTransform: string;
+  hoverBg: string;
 }
 
 export const PrimaryButton = (props: IButtonProps) => {
-  const {text, padding, bg, rounded, shadow, hoverShadow, suffix, prefix, fontSize, fontFamily, width, m} = props;
-
-
-
+  const {text, padding, bg, rounded, shadow, hoverShadow, suffix, prefix, textSize, fontFamily, width, m, textTransform, hoverBg} = props;
 
   return (
    <>
@@ -30,13 +29,15 @@ export const PrimaryButton = (props: IButtonProps) => {
       shadow={shadow}
       hoverShadow={hoverShadow}
       rounded={rounded}
-      fontSize={fontSize}
+      textSize={textSize}
       fontFamily={fontFamily}
       p={padding}
       suffix={suffix}
       prefix={prefix}
-      width={width}
+      w={width}
       m={m}
+      textTransform={textTransform}
+      hoverBg={hoverBg}
     >
       {text}
     </Button>

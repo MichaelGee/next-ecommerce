@@ -1,5 +1,5 @@
 import { InputComponent } from 'components/atoms/Input'
-import {Icon} from 'react-atomize'
+import {Icon} from 'atomize'
 
 export const Searchbar = () => {
     return (
