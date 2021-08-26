@@ -1,5 +1,3 @@
-import { PrimaryButton } from 'components/atoms/Button'
-import { ProductCard } from 'components/organisms/ProductCard'
 import Head from 'next/head'
 import { FC } from 'react'
 
@@ -11,7 +9,6 @@ const Home: FC = () => {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-     <ProductCard/>
     </>
 
   )

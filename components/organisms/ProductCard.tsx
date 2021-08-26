@@ -21,7 +21,7 @@ export const ProductCard = (props: IImage) => {
             <Text tag='p' textSize='tiny'>
                 Same manufacturer as Alexander Wang & Armani
             </Text>
-            <PrimaryButton text='ADD TO CART' bg='brand01' padding={{ y: '0.5rem', x: '0.5rem'}} textSize={{ xs: 'tiny', md: 'body'}} width='100%' m={{ y: '0.5rem' }} hoverBg="contrast01"/>
+            <PrimaryButton text='ADD TO CART' bg='brand01' padding={{ y: '0.5rem', x: '0.5rem'}} textSize={{ xs: 'tiny', md: 'caption'}} width='100%' m={{ y: '0.5rem' }} hoverBg="contrast01"/>
         </Div>
     )
 }
