@@ -31,10 +31,13 @@ const mainTheme = {
     contrast10 : "#EAE6E9",
     black: "#000000",
     white: "#ffffff",
+    info: '#3498db',
+    success: '#07bc0c',
+    warning: "#f1c40f",
+    error: '#e74c3c'
  },
 
  fontFamily : {
-   //  ...DefaultTheme.fontFamily,
     main: 'Playfair Display, serif',
  },
 
