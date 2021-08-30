@@ -1,24 +1,29 @@
 import { PrimaryButton } from 'components/atoms/Button';
-import { FC } from 'react';
-import { Div, Text} from 'react-atomize';
-import { Box } from 'rebass';
+import { FC, useState } from 'react';
+import { Div, Text, Icon } from 'react-atomize';
+import { useMedia } from 'react-use';
 
 export const Navbar: FC = () => {
+    const [hideNavbar, setHideNavbar] = useState(false);
+    const toggleNavbar = () => {
+        setHideNavbar(v => !v);
+    }
     return (
-        <Div p={{ y: '1rem', r: '2rem', l: '2rem' }} d="flex" justify="space-between" align="center">
-            <Box display="flex">
-                <Text tag='h1' m={{ l: '1rem', r: '1rem' }} textSize="caption" textTransform="uppercase">Women</Text>
-                <Text tag='h1' m={{ l: '1rem', r: '1rem' }} textSize="caption" textTransform="uppercase">Men</Text>
-                <Text tag='h1' m={{ l: '1rem', r: '1rem' }} textSize="caption" textTransform="uppercase">Home</Text>
-                <Text tag='h1' m={{ l: '1rem', r: '1rem' }} textSize="caption" textTransform="uppercase">New Arrivals</Text>
-                <Text tag='h1' m={{ l: '1rem', r: '1rem' }} textSize="caption" textTransform="uppercase">Comming Soon</Text>
-            </Box>
-            <Box>
-                Logo
-            </Box>
-            <Box display="flex" alignItems="center" justifyContent="center">
-                <Text tag='h1' m={{ l: '1rem', r: '1rem' }} textSize="caption" textTransform="uppercase">How It Works</Text>
-                <Text tag='h1' m={{ l: '1rem', r: '1rem' }} textSize="caption" textTransform="uppercase">Contact</Text>
+        <>
+        <Div pos="fixed" right='0' left='0' zIndex="100" p={{ y: '1rem', r: '2rem', l: '2rem' }} d="flex" justify="space-between" align="center">
+            <Div d={{  sm: 'none', md: 'none', xs: 'none', lg: 'flex' }}>
+                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='black' textSize="caption" textTransform="uppercase">Women</Text>
+                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='black' textSize="caption" textTransform="uppercase">Men</Text>
+                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='black' textSize="caption" textTransform="uppercase">Home</Text>
+                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='black' textSize="caption" textTransform="uppercase">New Arrivals</Text>
+                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='black' textSize="caption" textTransform="uppercase">Comming Soon</Text>
+            </Div>
+            <Text tag='h1' textSize="title" className='logo'>
+                Grandior
+            </Text>
+            <Div d={{ m: 'none', md: 'none', xs: 'none', lg: 'flex' }} align="center" justify="center">
+                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='black' textSize="caption" textTransform="uppercase">How It Works</Text>
+                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='black' textSize="caption" textTransform="uppercase">Contact</Text>
                 <PrimaryButton text='Log in' bg="brand01"
                     shadow="1"
                     hoverShadow="4"
@@ -26,8 +31,22 @@ export const Navbar: FC = () => {
                     fontSize="caption"
                     padding='1rem 2rem'
                     textTransform="uppercase"
-                     />
-            </Box>
+                />
+            </Div>
+            <Icon cursor="pointer" size="1.5rem" onClick={toggleNavbar}  d={{ lg: 'none', md: 'flex' }} name={hideNavbar === false ? 'Menu' : 'Cross'} />
+            
         </Div>
+        <Div bg='white' pos='absolute' top='0' right='0' left='0' zIndex='-1' p={{ b: '2rem', r: '1.5rem', l: '1.5rem',  t: '3rem'}} h="100vh" transition="all 0.4s ease-in-out" opacity={hideNavbar === false ? '0' : '1'} transform= {hideNavbar === false ? "translateY(-100px)" : "translateY(0)"}>
+            <Div>
+                <Text cursor="pointer" tag='a' m={{ y: '1rem',  }} textColor='black' textSize="caption" textTransform="uppercase">Women</Text>
+                <Text cursor="pointer" tag='a' m={{ y: '1rem',  }} textColor='black' textSize="caption" textTransform="uppercase">Men</Text>
+                <Text cursor="pointer" tag='a' m={{ y: '1rem', }} textColor='black' textSize="caption" textTransform="uppercase">Home</Text>
+                <Text cursor="pointer" tag='a' m={{ y: '1rem', }} textColor='black' textSize="caption" textTransform="uppercase">New Arrivals</Text>
+                <Text cursor="pointer" tag='a' m={{ y: '1rem', }} textColor='black' textSize="caption" textTransform="uppercase">Comming Soon</Text>
+                <Text cursor="pointer" tag='a' m={{ y: '1rem', }} textColor='black' textSize="caption" textTransform="uppercase">How It Works</Text>
+                <Text cursor="pointer" tag='a'  m={{ y: '1rem', }} textColor='black' textSize="caption" textTransform="uppercase">Contact</Text>
+            </Div>
+            </Div>
+        </>
     )
 }

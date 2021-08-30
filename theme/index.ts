@@ -38,7 +38,8 @@ const mainTheme = {
  },
 
  fontFamily : {
-    main: 'Playfair Display, serif',
+    ...DefaultTheme.fontFamily,
+    logo: 'Dancing Script, cursive',
  },
 
 //FONT SIZE

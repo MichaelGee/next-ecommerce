@@ -1,4 +1,4 @@
-import { Toast } from 'components/molecules/Toast'
+import { Navbar } from 'components/organisms/Navbar'
 import Head from 'next/head'
 import { FC } from 'react'
 
@@ -10,9 +10,8 @@ const Home: FC = () => {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Toast/>
+      <Navbar/>
     </>
-
   )
 }
 
