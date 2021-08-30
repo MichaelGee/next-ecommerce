@@ -1,5 +1,5 @@
 import { Div, Image, Text } from 'atomize'
-import { PrimaryButton } from 'components/atoms/Button';
+import { PrimaryButton } from 'components/atoms/Button/Button';
 import placeholder from 'public/assets/images/shoe.jpg'
 import React from 'react';
 import { Flex } from 'rebass'

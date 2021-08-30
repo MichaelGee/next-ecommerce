@@ -1,4 +1,4 @@
-import { InputComponent } from 'components/atoms/Input'
+import { InputComponent } from 'components/atoms/Input/Input'
 import {Icon} from 'atomize'
 
 export const Searchbar = () => {

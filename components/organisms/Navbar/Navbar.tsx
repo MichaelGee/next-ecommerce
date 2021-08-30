@@ -1,4 +1,4 @@
-import { PrimaryButton } from 'components/atoms/Button';
+import { PrimaryButton } from 'components/atoms/Button/Button';
 import { FC, useState } from 'react';
 import { Div, Text, Icon } from 'react-atomize';
 import { useMedia } from 'react-use';

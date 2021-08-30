@@ -1,4 +1,3 @@
-import { Navbar } from 'components/organisms/Navbar'
 import Head from 'next/head'
 import { FC } from 'react'
 
@@ -7,10 +6,10 @@ const Home: FC = () => {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>Grandior</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Navbar/>
+      <h1>Hello world!</h1>
     </>
   )
 }

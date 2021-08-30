@@ -23,7 +23,7 @@ export const PrimaryButton = (props: IButtonProps) => {
   const {text, padding, bg, rounded, shadow, hoverShadow, suffix, prefix, textSize, fontFamily, width, m, textTransform, hoverBg} = props;
 
   return (
-   <>
+   <div id='button'>
     <Button
       bg={bg}
       shadow={shadow}
@@ -41,6 +41,6 @@ export const PrimaryButton = (props: IButtonProps) => {
     >
       {text}
     </Button>
-   </>
+   </div>
   )
 }
