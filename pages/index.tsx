@@ -1,3 +1,4 @@
+import { Footer } from 'components/organisms/Footer/Footer'
 import Head from 'next/head'
 import { FC } from 'react'
 
@@ -9,7 +10,7 @@ const Home: FC = () => {
         <title>Grandior</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Hello world!</h1>
+      <Footer/>
     </>
   )
 }
