@@ -1,10 +1,14 @@
 import { PrimaryButton } from 'components/atoms/Button/Button';
-import { FC, useState } from 'react';
+import { ModalContext } from 'contexts/ModalContext';
+import { FC, useState, useContext } from 'react';
 import { Div, Text, Icon } from 'react-atomize';
 import { useMedia } from 'react-use';
+import { LoginForm } from '../Forms/LoginForm';
+
 
 export const Navbar: FC = () => {
     const [hideNavbar, setHideNavbar] = useState(false);
+    const { toggleModal, modal } = useContext(ModalContext);
     const toggleNavbar = () => {
         setHideNavbar(v => !v);
     }
@@ -28,13 +32,14 @@ export const Navbar: FC = () => {
                     shadow="1"
                     hoverShadow="4"
                     rounded='25'
-                    fontSize="caption"
+                    textSize="caption"
                     padding='1rem 2rem'
                     textTransform="uppercase"
+                    m={{l: '1rem'}}
+                    onClick={()=> toggleModal()}
                 />
             </Div>
             <Icon cursor="pointer" size="1.5rem" onClick={toggleNavbar}  d={{ lg: 'none', md: 'flex' }} name={hideNavbar === false ? 'Menu' : 'Cross'} />
-            
         </Div>
         <Div bg='white' pos='absolute' top='0' right='0' left='0' zIndex='-1' p={{ b: '2rem', r: '1.5rem', l: '1.5rem',  t: '3rem'}} h="100vh" transition="all 0.4s ease-in-out" opacity={hideNavbar === false ? '0' : '1'} transform= {hideNavbar === false ? "translateY(-100px)" : "translateY(0)"}>
             <Div>
@@ -47,6 +52,7 @@ export const Navbar: FC = () => {
                 <Text cursor="pointer" tag='a'  m={{ y: '1rem', }} textColor='black' textSize="caption" textTransform="uppercase">Contact</Text>
             </Div>
             </Div>
+            <LoginForm isOpen={modal} onClose={toggleModal}/>
         </>
     )
 }

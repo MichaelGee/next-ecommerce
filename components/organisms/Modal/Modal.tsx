@@ -1,4 +1,4 @@
-import React from 'react';
+import {FC} from 'react';
 import { Div, Button, Modal, Icon, Text } from "atomize";
 
 
@@ -9,7 +9,7 @@ interface IModal {
   maxW: string;
 }
 
-export const ModalComponent = (props: IModal) => {
+export const ModalComponent: FC = (props: IModal) => {
   const { isOpen, onClose, children, maxW } = props;
   return (
     <>
@@ -19,7 +19,7 @@ export const ModalComponent = (props: IModal) => {
           pos="absolute"
           top="1rem"
           right="1rem"
-          size="16px"
+          size="25px"
           onClick={onClose}
           cursor="pointer"
         />

@@ -17,10 +17,11 @@ interface IButtonProps {
   m: object;
   textTransform: string;
   hoverBg: string;
+  onClick: Function;
 }
 
 export const PrimaryButton = (props: IButtonProps) => {
-  const {text, padding, bg, rounded, shadow, hoverShadow, suffix, prefix, textSize, fontFamily, width, m, textTransform, hoverBg} = props;
+  const {text, padding, bg, rounded, shadow, hoverShadow, suffix, prefix, textSize, fontFamily, width, m, textTransform, hoverBg, onClick} = props;
 
   return (
    <div id='button'>
@@ -38,6 +39,7 @@ export const PrimaryButton = (props: IButtonProps) => {
       m={m}
       textTransform={textTransform}
       hoverBg={hoverBg}
+      onClick={onClick}
     >
       {text}
     </Button>
