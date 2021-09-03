@@ -2,16 +2,16 @@ import { Input } from "atomize";
 
 
 interface IInput {
-    placeholder: string;
-    prefix: React.ReactNode;
-    suffix: React.ReactNode;
-    borderFocused: string;
-    borderColor: string;
-    type: string;
-    m: object;
-    p: object
-    shadow: string;
-    rounded: string;
+    placeholder?: string;
+    prefix?: React.ReactNode;
+    suffix?: React.ReactNode;
+    borderFocused?: string;
+    borderColor?: string;
+    type?: string;
+    m?: object;
+    p?: object
+    shadow?: string;
+    rounded?: string;
 }
 
 export const InputComponent = (props: IInput) => {

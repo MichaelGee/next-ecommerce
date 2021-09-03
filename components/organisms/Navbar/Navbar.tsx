@@ -2,13 +2,13 @@ import { PrimaryButton } from 'components/atoms/Button/Button';
 import { ModalContext } from 'contexts/ModalContext';
 import { FC, useState, useContext } from 'react';
 import { Div, Text, Icon } from 'react-atomize';
-import { useMedia } from 'react-use';
 import { LoginForm } from '../Forms/LoginForm';
 
 
 export const Navbar: FC = () => {
     const [hideNavbar, setHideNavbar] = useState(false);
     const { toggleModal, modal } = useContext(ModalContext);
+
     const toggleNavbar = () => {
         setHideNavbar(v => !v);
     }

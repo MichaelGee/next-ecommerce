@@ -3,10 +3,10 @@ import { Div, Button, Modal, Icon, Text } from "atomize";
 
 
 interface IModal {
-  isOpen: boolean;
-  onClose: Function;
-  children: React.ReactNode;
-  maxW: string;
+  isOpen?: boolean;
+  onClose?: Function;
+  children?: React.ReactNode;
+  maxW?: string;
 }
 
 export const ModalComponent: FC = (props: IModal) => {
