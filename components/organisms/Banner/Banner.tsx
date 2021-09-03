@@ -20,7 +20,7 @@ const Container = styled(animated.div)`
 
 
 export const Banner = () => {
-    const [index, set] = useState(0);
+    const [index, set] = useState(0)
     const slides = [
         { id: 0, url: 'photo-1544511916-0148ccdeb877?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1901&q=80i', content: 'Slide 1' },
         { id: 1, url: 'photo-1544572571-ab94fd872ce4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1534&q=80', content: 'Slide 2' },
