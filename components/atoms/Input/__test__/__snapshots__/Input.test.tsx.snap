@@ -5,6 +5,7 @@ exports[`render input matches the snapshot 1`] = `
   className=""
 >
   <input
+    autocomplete="on"
     className=""
     d="flex"
   />

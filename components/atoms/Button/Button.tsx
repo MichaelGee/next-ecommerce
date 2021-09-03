@@ -2,22 +2,22 @@ import { Button } from "atomize";
 
 
 interface IButtonProps {
-  text: string;
-  textSize: string | object;
-  padding: string | object;
-  bg: string;
-  shadow: string;
-  rounded: string;
-  fontFamily: string;
-  hoverShadow: string;
-  iconPosition: string;
-  suffix: Element;
-  prefix: Element;
-  width: string;
-  m: object;
-  textTransform: string;
-  hoverBg: string;
-  onClick: Function;
+  text?: string;
+  textSize?: string | object;
+  padding?: string | object;
+  bg?: string;
+  shadow?: string;
+  rounded?: string;
+  fontFamily?: string;
+  hoverShadow?: string;
+  iconPosition?: string;
+  suffix?: Element;
+  prefix?: Element;
+  width?: string;
+  m?: object;
+  textTransform?: string;
+  hoverBg?: string;
+  onClick?: Function;
 }
 
 export const PrimaryButton = (props: IButtonProps) => {

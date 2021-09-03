@@ -1,6 +1,6 @@
 import React, { useState, useMemo, useCallback, createContext } from 'react';
 
-export const ModalContext = createContext();
+export const ModalContext = createContext(null);
 
 export const ModalProvider = ({children}) => {
     const [modal, setModal] = useState<boolean>(false);
