@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import { StyleReset, ThemeProvider } from 'atomize';
 import { Provider as StyletronProvider } from 'styletron-react'
-import { styletron } from '../styletron'
+import { styletron } from 'styletron'
 import  mainTheme  from 'theme'
 import { ModalProvider } from 'contexts/ModalContext';
 
