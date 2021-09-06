@@ -35,6 +35,7 @@ export const Banner = () => {
         config: config.molasses,
     })
     useEffect(() => void setInterval(() => set(state => (state + 1) % 4), 6000), [])
+    {/* @ts-ignore  */}
     return transitions(({ props }, item) => (
         <Container
           style={{ ...props, backgroundImage: `url(https://images.unsplash.com/${item.url}&auto=format&fit=crop)`}}>
