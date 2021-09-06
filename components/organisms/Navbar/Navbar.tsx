@@ -52,6 +52,7 @@ export const Navbar: FC = () => {
                 <Text cursor="pointer" tag='a'  m={{ y: '1rem', }} textColor='black' textSize="caption" textTransform="uppercase">Contact</Text>
             </Div>
             </Div>
+            {/* @ts-ignore  */}
             <LoginForm isOpen={modal} onClose={toggleModal}/>
         </>
     )
