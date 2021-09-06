@@ -11,6 +11,7 @@ interface ISignupForm {
 export const SignupForm = (props: ISignupForm) => {
     const { isOpen, onClose } = props
     return (
+        // @ts-ignore 
         <ModalComponent isOpen={isOpen} onClose={onClose} maxW="24rem">
             <Div d='flex' flexDir='column' w='100%' >
                 <Text tag="h1" textSize="heading" textAlign="center" m={{ b: "1rem" }}>
@@ -60,7 +61,7 @@ export const SignupForm = (props: ISignupForm) => {
                     shadow="1"
                     hoverShadow="4"
                     rounded='3'
-                    fontSize="caption"
+                    textSize="caption"
                     padding='1rem 2rem'
                     width='100vw'
                     m={{ y: '0.5rem' }}
