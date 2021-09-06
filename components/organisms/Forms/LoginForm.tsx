@@ -2,11 +2,16 @@ import { PrimaryButton } from 'components/atoms/Button/Button'
 import { InputComponent } from 'components/atoms/Input/Input'
 import { Div, Icon, Text } from 'atomize'
 import { ModalComponent } from '../Modal/Modal'
-import {FC} from 'react';
 
+interface ILoginForm {
+    isOpen: boolean;
+    onClose: Function;
+}
 
-export const LoginForm: FC = ({isOpen, onClose}) => {
+export const LoginForm = (props: ILoginForm) => {
+    const {isOpen, onClose} = props;
     return (
+        // @ts-ignore 
         <ModalComponent isOpen={isOpen} onClose={onClose} maxW="24rem">
             <Div tag='form' d='flex' flexDir='column' w='100%' >
                 <Text tag="h1" textSize="heading" textAlign="center" m={{ b: "1rem" }}>
