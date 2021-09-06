@@ -1,6 +1,6 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 import { Provider as StyletronProvider } from 'styletron-react'
-import { styletron } from '../styletron'
+import { Styletron } from '../styletron.js'
 
 class MyDocument extends Document {
   static async getInitialProps(context) {
@@ -8,7 +8,7 @@ class MyDocument extends Document {
       context.renderPage({
         enhanceApp: (App) => (props) =>
           (
-            <StyletronProvider value={styletron}>
+            <StyletronProvider value={Styletron}>
               <App {...props} />
             </StyletronProvider>
           ),
@@ -18,7 +18,7 @@ class MyDocument extends Document {
       ...context,
       renderPage,
     })
-    const stylesheets = styletron.getStylesheets() || []
+    const stylesheets = Styletron.getStylesheets() || []
     return { ...initialProps, stylesheets }
   }
 
