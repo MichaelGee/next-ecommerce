@@ -5,7 +5,7 @@ import React from 'react';
 import { Flex } from 'rebass'
 
 interface IImage {
-    src: string;
+    src?: string;
 }
 
 
