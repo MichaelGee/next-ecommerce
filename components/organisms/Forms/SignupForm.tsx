@@ -25,8 +25,9 @@ export const SignupForm = (props: ISignupForm) => {
                     opacity="0.4"
                     top="50%"
                     left="0.75rem"
+                    color='brand04'
                     transform="translateY(-50%)"
-                />} placeholder="Username" rounded='3' type="text" borderFocused="brand04" m={{ y: '0.5rem' }} p={{ x: "2.5rem" }} />
+                />} placeholder="Username" borderColor="#DDDDDD" rounded='25'  borderFocused="brand04" m={{ y: '0.5rem' }} p={{ x: "2.5rem", y: '1.1rem' }} />
                 <InputComponent prefix={<Icon
                     name="Email"
                     size="20px"
@@ -34,9 +35,10 @@ export const SignupForm = (props: ISignupForm) => {
                     pos="absolute"
                     opacity="0.4"
                     top="50%"
+                    color='brand04'
                     left="0.75rem"
                     transform="translateY(-50%)"
-                />} placeholder="Email" rounded='3' type="email" borderFocused="brand04" m={{ y: '0.5rem' }} p={{ x: "2.5rem" }} />
+                />} placeholder="Email" borderColor="#DDDDDD" rounded='25'  borderFocused="brand04" m={{ y: '0.5rem' }} p={{ x: "2.5rem", y: '1.1rem' }} />
                 <InputComponent prefix={<Icon
                     name="Eye"
                     size="20px"
@@ -45,8 +47,9 @@ export const SignupForm = (props: ISignupForm) => {
                     opacity="0.4"
                     top="50%"
                     left="0.75rem"
+                    color='brand04'
                     transform="translateY(-50%)"
-                />} placeholder="Password" rounded='3' borderFocused="brand04" type="password" m={{ y: '0.5rem' }} p={{ x: "2.5rem" }} />
+                />} placeholder="Password" borderColor="#DDDDDD" rounded='25'  borderFocused="brand04" m={{ y: '0.5rem' }} p={{ x: "2.5rem", y: '1.1rem' }} />
                 <InputComponent prefix={<Icon
                     name="Eye"
                     size="20px"
@@ -55,12 +58,14 @@ export const SignupForm = (props: ISignupForm) => {
                     opacity="0.4"
                     top="50%"
                     left="0.75rem"
+                    color='brand04'
                     transform="translateY(-50%)"
-                />} placeholder="Re-type password" rounded='3' borderFocused="brand04" type="password" m={{ y: '0.5rem' }} p={{ x: "2.5rem" }} />
-                <PrimaryButton text='Submit' bg="brand01"
+                />} placeholder="Re-type password" borderColor="#DDDDDD" rounded='25'  borderFocused="brand04" m={{ y: '0.5rem' }} p={{ x: "2.5rem", y: '1.1rem' }} />
+                <PrimaryButton text='Submit'
+                    bg="brand01"
                     shadow="1"
                     hoverShadow="4"
-                    rounded='3'
+                    rounded='25'
                     textSize="caption"
                     padding='1rem 2rem'
                     width='100%'

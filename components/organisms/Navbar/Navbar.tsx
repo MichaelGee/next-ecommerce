@@ -17,18 +17,18 @@ export const Navbar: FC = () => {
         <>
         <Div pos="fixed" right='0' left='0' zIndex="100" p={{ y: '1rem', r: '2rem', l: '2rem' }} d="flex" justify="space-between" align="center">
             <Div d={{  sm: 'none', md: 'none', xs: 'none', lg: 'flex' }}>
-                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='black' textSize="caption" textTransform="uppercase">Women</Text>
-                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='black' textSize="caption" textTransform="uppercase">Men</Text>
-                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='black' textSize="caption" textTransform="uppercase">Home</Text>
-                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='black' textSize="caption" textTransform="uppercase">New Arrivals</Text>
-                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='black' textSize="caption" textTransform="uppercase">Comming Soon</Text>
+                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='white' textSize="caption" textTransform="uppercase">Women</Text>
+                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='white' textSize="caption" textTransform="uppercase">Men</Text>
+                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='white' textSize="caption" textTransform="uppercase">Home</Text>
+                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='white' textSize="caption" textTransform="uppercase">New Arrivals</Text>
+                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='white' textSize="caption" textTransform="uppercase">Comming Soon</Text>
             </Div>
-            <Text tag='h1' textSize="title" className='logo'>
+            <Text tag='h1' textSize="title" textColor='white' className='logo'>
                 Grandior
             </Text>
             <Div d={{ m: 'none', md: 'none', xs: 'none', lg: 'flex' }} align="center" justify="center">
-                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='black' textSize="caption" textTransform="uppercase">How It Works</Text>
-                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='black' textSize="caption" textTransform="uppercase">Contact</Text>
+                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='white' textSize="caption" textTransform="uppercase">How It Works</Text>
+                <Text cursor="pointer" tag='a' m={{ l: '1rem', r: '1rem' }} textColor='white' textSize="caption" textTransform="uppercase">Contact</Text>
                 <PrimaryButton text='Log in' bg="brand01"
                     shadow="1"
                     hoverShadow="4"
