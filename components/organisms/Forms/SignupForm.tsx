@@ -63,7 +63,7 @@ export const SignupForm = (props: ISignupForm) => {
                     rounded='3'
                     textSize="caption"
                     padding='1rem 2rem'
-                    width='100vw'
+                    width='100%'
                     m={{ y: '0.5rem' }}
                 />
             </Div>

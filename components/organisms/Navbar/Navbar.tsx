@@ -3,11 +3,12 @@ import { ModalContext } from 'contexts/ModalContext';
 import { FC, useState, useContext } from 'react';
 import { Div, Text, Icon } from 'react-atomize';
 import { LoginForm } from '../Forms/LoginForm';
+import { SignupForm } from '../Forms/SignupForm';
 
 
 export const Navbar: FC = () => {
     const [hideNavbar, setHideNavbar] = useState(false);
-    const { toggleModal, modal } = useContext(ModalContext);
+    const { toggleLoginModal, toggleSignupModal, signupModal, loginModal } = useContext(ModalContext);
 
     const toggleNavbar = () => {
         setHideNavbar(v => !v);
@@ -36,7 +37,17 @@ export const Navbar: FC = () => {
                     padding='1rem 2rem'
                     textTransform="uppercase"
                     m={{l: '1rem'}}
-                    onClick={()=> toggleModal()}
+                    onClick={()=> toggleLoginModal()}
+                />
+                <PrimaryButton text='Sign up' bg="brand01"
+                    shadow="1"
+                    hoverShadow="4"
+                    rounded='25'
+                    textSize="caption"
+                    padding='1rem 2rem'
+                    textTransform="uppercase"
+                    m={{l: '1rem'}}
+                    onClick={()=> toggleSignupModal()}
                 />
             </Div>
             <Icon cursor="pointer" size="1.5rem" onClick={toggleNavbar}  d={{ lg: 'none', md: 'flex' }} name={hideNavbar === false ? 'Menu' : 'Cross'} />
@@ -53,7 +64,8 @@ export const Navbar: FC = () => {
             </Div>
             </Div>
             {/* @ts-ignore  */}
-            <LoginForm isOpen={modal} onClose={toggleModal}/>
+            <LoginForm isOpen={loginModal} onClose={toggleLoginModal}/>
+            <SignupForm isOpen={signupModal} onClose={toggleSignupModal}/>
         </>
     )
 }
